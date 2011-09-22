@@ -1,2 +1,4 @@
 *.swo
 *.swp
+_drafts/
+_site/
