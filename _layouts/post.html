@@ -5,12 +5,12 @@ layout: default
 <div id="content" class="grid_9 alpha">
 <article>
 <section class="meta prefix_1 grid_1 alpha">
-    <div>{{ post.date | date: "%Y" }}</div>
-    <div>{{ post.date | date: "%b" }}</div>
-    <div>{{ post.date | date: "%d" }}</div>
+    <div>{{ page.date | date: "%Y" }}</div>
+    <div>{{ page.date | date: "%b" }}</div>
+    <div>{{ page.date | date: "%d" }}</div>
 </section>
 <section class="content grid_7 omega">
-<h1><a href="{{ url }}">{{ title }}</a></h1>
+<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 <section class="body">
 {{ content }}
 </section>
