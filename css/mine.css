@@ -8,12 +8,13 @@ body {background: #E1E6E9 none repeat scroll top left }
     background: #dceeef;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
     color: #000;
 }
 
 a:hover {
+    color: #000;
     text-decoration: underline;
 }
 
@@ -111,6 +112,7 @@ footer.page {
     background:#f9f9f9;
     border-top:1px solid #f4f4f4;
     border-bottom:1px solid #f4f4f4;
+    padding: 56px 0 40px 0;
 }
 
 footer.credits {
@@ -121,4 +123,21 @@ footer.credits {
 
 footer.credits .copyright {
     margin: 15px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    text-align: -webkit-match-parent;
+}
+
+footer h2 {
+    font-size: 17px;
+    font-weight: 400;
+    border-bottom:1px solid #e8e8e8;
+    margin:0 0 15px;
+    padding:0 0 12px;
 }
