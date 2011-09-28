@@ -40,6 +40,12 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.shadow {
+    -moz-box-shadow: 0 0 5px 5px #E2E2E2;
+    -webkit-box-shadow: 0 0 5px 5px #E2E2E2;
+    box-shadow: 0 0 5px 5px #E2E2E2;
+}
+
 #main {
     background: white;
 }
