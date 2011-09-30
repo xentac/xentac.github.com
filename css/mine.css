@@ -93,6 +93,15 @@ article .body {
     color: #757575;
 }
 
+article section.text .labels {
+    font-style: italic;
+    color: #B1B0B0;
+}
+
+article section.text .categories {
+    color: #777;
+}
+
 article footer {
     background: #F6F6F6;
     border-top:1px solid #e9e9e9;
@@ -102,6 +111,10 @@ article footer {
 
 article footer .text {
     margin: 22px 0;
+    color: #B1B0B0;
+}
+
+article footer .comment-link a, article footer .comment-link a:hover, article footer .comment-link a:visited {
     color: #B1B0B0;
 }
 

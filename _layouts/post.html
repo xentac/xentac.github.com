@@ -20,7 +20,7 @@ layout: default
 </section>
 <footer class="prefix_1 grid_7 omega">
 <section class="text">
-Labels ... Comments ...
+<span class="labels">Labels:</span><span class="categories">{{ page.categories | join: ',' }}</span><span style="margin-left: 10px;" class="comment-link"><a href="{{ page.url }}#disqus_thread" identifier="{{ page.id }}">X Comments</a></span>
 </section>
 </footer>
 <section class="prefix_2 grid_7 comments">
@@ -28,6 +28,7 @@ Labels ... Comments ...
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'xentacsxenophilia'; // required: replace example with your forum shortname
+    var disqus_identifier = '{{ page.id }}';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {

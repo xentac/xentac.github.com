@@ -24,7 +24,7 @@ title: Xentac's Xenophilia
 <a href="{{ post.url }}"><img src='http://lh6.ggpht.com/_Kwwy9VyLMKw/TNM2vtbs_8I/AAAAAAAADf4/BTLu9wyCoeI/jump_link.jpg' alt="Read More"></a>
 </section>
 <section class="text">
-Labels ... Comments ...
+<span class="labels">Labels:</span><span class="categories">{{ post.categories | join: ',' }}</span> <span style="margin-left: 10px;" class="comment-link"><a href="{{ post.url }}#disqus_thread" identifier="{{ post.id }}">X Comments</a></span>
 </section>
 </footer>
 </article>
