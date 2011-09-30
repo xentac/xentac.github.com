@@ -93,6 +93,12 @@ article .body {
     color: #757575;
 }
 
+article .body blockquote {
+    padding: 25px 0 0 35px;
+    font-style: italic;
+    background:url(http://lh3.ggpht.com/_Kwwy9VyLMKw/TNM2v7Rox1I/AAAAAAAADgE/xNwSZ6V0-7Y/quote_top.jpg) no-repeat left top;
+}
+
 article section.text .labels {
     font-style: italic;
     color: #B1B0B0;
