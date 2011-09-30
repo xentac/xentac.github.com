@@ -41,9 +41,9 @@ nav ul li a:hover {
 }
 
 .shadow {
-    -moz-box-shadow: 0 0 5px 5px #E2E2E2;
-    -webkit-box-shadow: 0 0 5px 5px #E2E2E2;
-    box-shadow: 0 0 5px 5px #E2E2E2;
+    -moz-box-shadow: 0 0 3px 3px #E8E8E8;
+    -webkit-box-shadow: 0 0 3px 3px #E8E8E8;
+    box-shadow: 0 0 3px 3px #E8E8E8;
 }
 
 #main {
