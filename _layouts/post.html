@@ -43,6 +43,19 @@ layout: default
 </article>
 </div>
 
-<aside class="grid_3 omega">
-Previous posts
+<aside class="grid_2 suffix_1 omega">
+<h4>Previous Posts</h4>
+<ul class="posts">
+{% for post in site.posts limit: 10 %}
+    <div class="post_info">
+        <li>
+            » <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+    </div>
+  {% endfor %}
+</ul>
+<h4 style="margin-top: 28px;">Links</h4>
+<ul>
+    <li>» <a href="/archive.html">Archive</a></li>
+</ul>
 </aside>

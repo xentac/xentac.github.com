@@ -18,6 +18,14 @@ a:hover {
     text-decoration: underline;
 }
 
+h4 {
+    font-size: 17px;
+    font-weight: 400;
+    border-bottom:1px solid #e8e8e8;
+    margin:0 0 15px;
+    padding:0 0 12px;
+}
+
 nav {
     margin: 15px 0;
 }
@@ -129,6 +137,15 @@ article footer .jump-link {
     margin: 10px 10px;
 }
 
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    text-align: -webkit-match-parent;
+}
+
 .pager {
     padding: 0 0 80px;
 }
@@ -157,12 +174,4 @@ footer ul {
 
 footer ul li {
     text-align: -webkit-match-parent;
-}
-
-footer h2 {
-    font-size: 17px;
-    font-weight: 400;
-    border-bottom:1px solid #e8e8e8;
-    margin:0 0 15px;
-    padding:0 0 12px;
 }

@@ -1,0 +1,22 @@
+---
+layout: default
+title: Xentac's Xenophilia
+---
+<div id="content" class="prefix_1 grid_10 alpha">
+<h4>Posts</h4>
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <span class="date">
+            <span class="year">{{ post.date | date: '%Y' }}</span>
+            <span class="month"><abbr>{{ post.date | date: '%b' }}</abbr></span>
+            <span class="day">{{ post.date | date: '%d' }}</span>
+        </span>
+        »
+        <a href="{{ post.url }}" title="{{ post.title }}">
+            <span class="title">{{ post.title }}</span>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+</div>
