@@ -38,11 +38,9 @@ title: Xentac's Xenophilia
 <h4>Previous Posts</h4>
 <ul class="posts">
 {% for post in site.posts limit: 10 %}
-    <div class="post_info">
-        <li>
-            » <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-    </div>
+    <li>
+        » <a href="{{ post.url }}" title="{{ post.date | date: "%Y-%m-%d" }}">{{ post.title }}</a>
+    </li>
   {% endfor %}
 </ul>
 <h4 style="margin-top: 28px;">Links</h4>
