@@ -87,9 +87,10 @@ article h1 {
 
 article h1 a, article h1 a:hover, article h1 a:visited {
     color: #666;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     text-decoration: none;
+    line-height: 24px;
 }
 
 article .meta {
@@ -99,10 +100,11 @@ article .meta {
 
 article .body {
     color: #757575;
+    font-size: 14px;
 }
 
 article .body blockquote {
-    padding: 25px 0 0 35px;
+    padding: 15px 0 3px 35px;
     font-style: italic;
     background:url(http://lh3.ggpht.com/_Kwwy9VyLMKw/TNM2v7Rox1I/AAAAAAAADgE/xNwSZ6V0-7Y/quote_top.jpg) no-repeat left top;
 }
