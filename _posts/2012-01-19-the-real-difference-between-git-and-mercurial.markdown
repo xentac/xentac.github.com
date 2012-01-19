@@ -24,7 +24,7 @@ From file revisions, manifests are created and from manifests, commits are creat
 
 Git takes the opposite approach: file blobs[^fileblobs].  To store revisions quickly, each new file revision is a complete copy of the file.  These copies are compressed, but there is a lot of duplication.  The developers of git have created methods to reduce the storage requirements by packing data--essentially creating something like a revlog at a given point in time.  These packs are not the same thing as a revlog, but serve a similar purpose of storing data in a space efficient format.
 
-Because git stores everything in files, its history is a lot more fluid.  Object files can be copied in from anywhere using any method (e.g. rsync).  Commits can be created or destroyed.  Just as history isn't linear in distributed version control world, git's data model doesn't depend on linear files.  Mercurial's file format is to git as compressed files are to sparse files.
+Because git stores everything in files, its history is a lot more fluid.  Object files can be copied in from anywhere using any method (e.g. `rsync`).  Commits can be created or destroyed.  Just as history isn't linear in distributed version control world, git's data model doesn't depend on linear files.  Mercurial's file format is to git as compressed files are to sparse files.
 
 Both tools have the notion of branches, but they are very different things.  A mercurial branch is something that is added to a commit and sticks around forever.  Anyone who pulls from you will see all the branches that are in your repository and which commits are in each one.  There are ways to do git branches in mercurial, but we will get into that later when we talk about extensions.
 
