@@ -50,7 +50,11 @@ Here is a great example of that.  In git, if you want to record your current wor
 
 If you want do the same thing in Mercurial, you can use the [attic](http://mercurial.selenic.com/wiki/AtticExtension) or [shelve](http://mercurial.selenic.com/wiki/ShelveExtension) extension (or the pbranch extension, says the attic extension page).  These both store the stashed patches as files in the repository that can be committed if necessary.  Each one solves a slightly different problem in slightly different ways instead of being able to use the underlying "plumbing"[^plumbing] to store data in a consistent manner.
 
-[^sametime]: I have seen it said that hg was an older and more mature project than git, but Mark Mackall says that Linus had [a few days' head start](http://lkml.indiana.edu/hypermail/linux/kernel/0504.3/1404.html).
+Another great example is `git commit --amend`.  If you want to modify the most recent commit, to add something you forgot or just change the commit message, `git commit --amend' will create a whole new set of file objects, tree objects, and a commit object.  After it's done those things, it updates the branch pointer.  If you then decide that that wasn't really what you wanted to do, you can just point the branch pointer back at the previous commit with `git reset --hard HEAD@{1}` (or by looking through the reflog for the commit hash that the branch used to point at).
+
+To do the same thing in Mercurial, there are a few options: you can rollback the commit and then create a new one, but all records of the original commit are gone or you could use the queue extension to import the last commit, then modify it with your current changes, then create a new commit.  Neither of these options benefits from any features that mercurial's data store offers, they exist solely to work around it.
+
+[^sametime]: I have seen it said that mercurial was an older and more mature project than git, but Mark Mackall says that Linus had [a few days' head start](http://lkml.indiana.edu/hypermail/linux/kernel/0504.3/1404.html).
 [^revlog]: Matt Mackall released a paper on [Revlog and Mercurial](http://selenic.com/mercurial/wiki/index.cgi/Presentations?action=AttachFile&do=get&target=ols-mercurial-paper.pdf) at the Ottawa Linux Symposium, 2006.
 [^fileblobs]: [The Git Object Model](http://book.git-scm.com/1_the_git_object_model.html) from the Git Community Book.
-[^plumbing]: Git refers to the underlying code as "plumbing" and the user interface stuff as "porcelain".
+[^plumbing]: Git refers to the underlying code as "plumbing" and the user interface code as "porcelain".
