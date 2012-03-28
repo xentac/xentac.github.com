@@ -2,10 +2,12 @@ body {background: #E1E6E9 none repeat scroll top left }
 
 ::selection {
     background: #dceeef;
+    color:#757575;
 }
 
 ::-moz-selection {
     background: #dceeef;
+    color:#757575;
 }
 
 a, a:visited {
