@@ -1,0 +1,52 @@
+h1 {
+    padding: 0;
+    margin: 14px 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+h2 {
+    padding: 0;
+    margin: 14px 0;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+h3 {
+    padding: 0;
+    margin: 14px 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+h4 {
+    padding: 0;
+    margin: 14px 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+h3 + h4 {
+    margin: -14px 0 0;
+}
+
+h5 {
+    padding: 0;
+    margin: 14px 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+section.content {
+    font-size: 14px;
+}
